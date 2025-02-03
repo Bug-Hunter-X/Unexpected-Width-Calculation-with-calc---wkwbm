@@ -1,0 +1,15 @@
+/*
+This CSS demonstrates the corrected approach for calculating the width of a nested element.
+The key change is setting a width for the parent which is relative to the desired container width.
+*/
+#container {
+  width: 500px; /*Fixed Width Container*/
+}
+#parent {
+  width: 80%; /*Parent width relative to its container*/
+}
+#child {
+  width: calc(100% - 20px);
+  background-color: lightblue;
+  padding: 10px;
+}
